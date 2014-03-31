@@ -1,0 +1,103 @@
+.navbar-brand {
+	color: #5B170E !important;
+}
+
+.title-info a,
+.title-info a:hover,
+.bordered-heading,
+#edit strong,
+#episodes-page .title-seasons .active {
+	color: #5B170E;
+}
+
+.text-border-top,
+.add-new-actor p {
+	border-color: #5B170E;
+}
+
+.btn-info,
+.btn-warning,
+.nav-justified .active a,
+.btn-inheading {
+	background-color: #5B170E !important;
+	border-color: #5B170E;
+	color: #FFFFFF !important;
+}
+
+.btn-info:hover,
+.btn-warning:hover,
+.btn-inheading {
+	background-color: #852214;
+	border-color: #852214 !important;
+}
+
+.media a,
+#edit .container p a,
+#edit .container td a{
+	color: #5B170E;
+}
+
+.home-trailer-poster:hover .overlay i,
+.home-trailer-poster:active .overlay i,
+.home-trailer-poster:hover > figcaption > a,
+.home-trailer-poster:active>figcaption>a {
+	color: #5B170E;
+	border-color: #5B170E;
+}
+
+.fa-chevron-left:hover,
+.fa-chevron-right:hover,
+.title-title,
+.title-title:hover {
+	color: #5B170E;
+}
+
+.heading {
+	border-color: #5B170E;
+}
+
+.navbar-default {
+	border-bottom-color: #5B170E;
+}
+
+footer {
+	border-top-color:#5B170E;
+}
+
+.tabs-title dd a {
+	color: #5B170E;
+}
+
+.pagination .active span,
+.pagination .active span:hover {
+	background-color: #5B170E;
+	border-color: #5B170E;
+}
+
+.btn-group .active,
+.search-page .btn-group .active span {
+	color: #5B170E;
+	border-top-color: #5B170E;
+}
+
+.search-page .btn-group .active:hover,
+.user-profile .btn-group .active:hover,
+.btn-group > button:active,
+.btn-group > button:focus {
+	color: #5B170E !important;
+	border-top: 3px solid #5B170E !important;
+}
+
+.navbar-nav li a:hover,
+footer a:hover {
+	color: #5B170E !important;
+}
+
+textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus {   
+border-color: #5B170E;
+box-shadow: 0 1px 1px #5B170E inset, 0 0 8px #5B170E;
+outline: 0 none}
+
+#yt-modal .modal-body {
+	border-top: 2px solid #5B170E !important;
+}

@@ -1,0 +1,58 @@
+.btn-add-link i {
+    border-right: 1px solid #E67E22;
+    font-size: 1.1em;
+    margin-right: 5px;
+    padding-right: 10px;
+}
+
+#play-link-modal .modal-dialog,
+#play-episode-link-modal .modal-dialog {
+	width: 768px;
+}
+
+
+
+.alert.alert-danger li {
+	text-align: left;
+}
+
+#report {
+	color: red;
+}
+
+#add-link-modal .modal-dialog,
+#add-episode-link-modal .modal-dialog {
+	width: 968px;
+}
+
+#add-link-modal h3, #add-episode-link-modal h3 {
+	margin-top: 0;
+}
+
+#movie-iframe iframe {
+	margin: auto;
+	display: block;
+}
+
+.friend-block img {
+	margin-right: 10px;
+}
+
+.friend-block h3 {
+	margin-top: 0;
+}
+
+.watched-container .well {
+	padding: 0;
+}
+
+.watched-container .col-sm-3 {
+	padding: 0;
+}
+
+.watched-item {
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin-right: 5px;
+}
