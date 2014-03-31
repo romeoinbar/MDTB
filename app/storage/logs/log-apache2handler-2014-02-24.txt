@@ -1,0 +1,46 @@
+[2014-02-24 15:59:50] production.ERROR: exception 'PDOException' with message 'SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+' in F:\xampp\htdocs\projects\streaming\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:47
+Stack trace:
+#0 F:\xampp\htdocs\projects\streaming\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php(47): PDO->__construct('mysql:host=ks30...', 'c4geekcine', 'mappylord', Array)
+#1 F:\xampp\htdocs\projects\streaming\vendor\laravel\framework\src\Illuminate\Database\Connectors\MySqlConnector.php(20): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=ks30...', Array, Array)
+#2 F:\xampp\htdocs\projects\streaming\vendor\laravel\framework\src\Illuminate\Database\Connectors\ConnectionFactory.php(59): Illuminate\Database\Connectors\MySqlConnector->connect(Array)
+#3 F:\xampp\htdocs\projects\streaming\vendor\laravel\framework\src\Illuminate\Database\Connectors\ConnectionFactory.php(47): Illuminate\Database\Connectors\ConnectionFactory->createSingleConnection(Array)
+#4 F:\xampp\htdocs\projects\streaming\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(127): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#5 F:\xampp\htdocs\projects\streaming\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(63): Illuminate\Database\DatabaseManager->makeConnection('mysql')
+#6 F:\xampp\htdocs\projects\streaming\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2649): Illuminate\Database\DatabaseManager->connection(NULL)
+#7 F:\xampp\htdocs\projects\streaming\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2615): Illuminate\Database\Eloquent\Model::resolveConnection(NULL)
+#8 F:\xampp\htdocs\projects\streaming\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1686): Illuminate\Database\Eloquent\Model->getConnection()
+#9 F:\xampp\htdocs\projects\streaming\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1609): Illuminate\Database\Eloquent\Model->newBaseQueryBuilder()
+#10 F:\xampp\htdocs\projects\streaming\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2828): Illuminate\Database\Eloquent\Model->newQuery()
+#11 [internal function]: Illuminate\Database\Eloquent\Model->__call('featured', Array)
+#12 [internal function]: Title->featured()
+#13 F:\xampp\htdocs\projects\streaming\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2844): call_user_func_array(Array, Array)
+#14 F:\xampp\htdocs\projects\streaming\app\controllers\HomeController.php(47): Illuminate\Database\Eloquent\Model::__callStatic('featured', Array)
+#15 F:\xampp\htdocs\projects\streaming\app\controllers\HomeController.php(47): Title::featured()
+#16 [internal function]: HomeController->index()
+#17 F:\xampp\htdocs\projects\streaming\vendor\laravel\framework\src\Illuminate\Routing\Controller.php(194): call_user_func_array(Array, Array)
+#18 F:\xampp\htdocs\projects\streaming\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php(92): Illuminate\Routing\Controller->callAction('index', Array)
+#19 F:\xampp\htdocs\projects\streaming\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php(61): Illuminate\Routing\ControllerDispatcher->call(Object(HomeController), Object(Illuminate\Routing\Route), 'index')
+#20 F:\xampp\htdocs\projects\streaming\vendor\laravel\framework\src\Illuminate\Routing\Router.php(904): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'HomeController', 'index')
+#21 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#22 F:\xampp\htdocs\projects\streaming\vendor\laravel\framework\src\Illuminate\Routing\Route.php(105): call_user_func_array(Object(Closure), Array)
+#23 F:\xampp\htdocs\projects\streaming\vendor\laravel\framework\src\Illuminate\Routing\Router.php(968): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#24 F:\xampp\htdocs\projects\streaming\vendor\laravel\framework\src\Illuminate\Routing\Router.php(938): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#25 F:\xampp\htdocs\projects\streaming\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(677): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#26 F:\xampp\htdocs\projects\streaming\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(652): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#27 F:\xampp\htdocs\projects\streaming\vendor\laravel\framework\src\Illuminate\Http\FrameGuard.php(38): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#28 F:\xampp\htdocs\projects\streaming\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(58): Illuminate\Http\FrameGuard->handle(Object(Illuminate\Http\Request), 1, true)
+#29 F:\xampp\htdocs\projects\streaming\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#30 F:\xampp\htdocs\projects\streaming\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#31 F:\xampp\htdocs\projects\streaming\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#32 F:\xampp\htdocs\projects\streaming\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(552): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#33 F:\xampp\htdocs\projects\streaming\index.php(49): Illuminate\Foundation\Application->run()
+#34 {main} [] []
+[2014-02-24 16:14:03] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Allowed memory size of 134217728 bytes exhausted (tried to allocate 9668499 bytes)' in F:\xampp\htdocs\projects\streaming\app\lib\Services\Cache\Cacher.php:69
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-24 17:07:29] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to undefined method Lib\Services\Presentation\DbPresenter::toArray()' in F:\xampp\htdocs\projects\streaming\app\storage\views\6a14a79582712ae62b4d8ae2c2e7c5fc:30
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []

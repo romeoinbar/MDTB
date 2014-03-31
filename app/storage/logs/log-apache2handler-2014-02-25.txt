@@ -1,0 +1,8 @@
+[2014-02-25 17:08:46] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '}'' in F:\xampp\htdocs\projects\movie\app\storage\views\c7b59befc1314de88f6eea76a40ae044:51
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-25 17:09:16] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to undefined method Lib\Services\Presentation\DbPresenter::toArray()' in F:\xampp\htdocs\projects\movie\app\storage\views\c7b59befc1314de88f6eea76a40ae044:51
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []

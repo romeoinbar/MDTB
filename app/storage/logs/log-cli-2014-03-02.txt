@@ -1,0 +1,42 @@
+[2014-03-02 06:17:33] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '"\n"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';'' in F:\xampp\htdocs\projects\movie\app\database\seeds\LanguageTableSeeder.php:25
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-03-02 06:17:43] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '"/n"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';'' in F:\xampp\htdocs\projects\movie\app\database\seeds\LanguageTableSeeder.php:25
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-03-02 06:27:00] local.ERROR: exception 'Illuminate\Database\QueryException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY' (SQL: insert into `titles_languages` (`id`, `title_id`, `language_id`, `created_at`, `updated_at`) values (1, 40014, 2, 2014-03-02 06:27:00, 2014-03-02 06:27:00))' in F:\xampp\htdocs\projects\movie\vendor\laravel\framework\src\Illuminate\Database\Connection.php:539
+Stack trace:
+#0 F:\xampp\htdocs\projects\movie\vendor\laravel\framework\src\Illuminate\Database\Connection.php(338): Illuminate\Database\Connection->run('insert into `ti...', Array, Object(Closure))
+#1 F:\xampp\htdocs\projects\movie\vendor\laravel\framework\src\Illuminate\Database\Connection.php(295): Illuminate\Database\Connection->statement('insert into `ti...', Array)
+#2 F:\xampp\htdocs\projects\movie\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1626): Illuminate\Database\Connection->insert('insert into `ti...', Array)
+#3 F:\xampp\htdocs\projects\movie\app\database\seeds\LanguageTableSeeder.php(31): Illuminate\Database\Query\Builder->insert(Array)
+#4 F:\xampp\htdocs\projects\movie\vendor\laravel\framework\src\Illuminate\Database\Console\SeedCommand.php(52): LanguageTableSeeder->run()
+#5 F:\xampp\htdocs\projects\movie\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\SeedCommand->fire()
+#6 F:\xampp\htdocs\projects\movie\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(241): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 F:\xampp\htdocs\projects\movie\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 F:\xampp\htdocs\projects\movie\vendor\symfony\console\Symfony\Component\Console\Application.php(891): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 F:\xampp\htdocs\projects\movie\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\SeedCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 F:\xampp\htdocs\projects\movie\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 F:\xampp\htdocs\projects\movie\artisan(59): Symfony\Component\Console\Application->run()
+#12 {main} [] []
+[2014-03-02 06:28:09] local.ERROR: exception 'Illuminate\Database\QueryException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY' (SQL: insert into `titles_languages` (`id`, `title_id`, `language_id`, `created_at`, `updated_at`) values (1, 1, 2, 2014-03-02 06:28:08, 2014-03-02 06:28:08))' in F:\xampp\htdocs\projects\movie\vendor\laravel\framework\src\Illuminate\Database\Connection.php:539
+Stack trace:
+#0 F:\xampp\htdocs\projects\movie\vendor\laravel\framework\src\Illuminate\Database\Connection.php(338): Illuminate\Database\Connection->run('insert into `ti...', Array, Object(Closure))
+#1 F:\xampp\htdocs\projects\movie\vendor\laravel\framework\src\Illuminate\Database\Connection.php(295): Illuminate\Database\Connection->statement('insert into `ti...', Array)
+#2 F:\xampp\htdocs\projects\movie\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1626): Illuminate\Database\Connection->insert('insert into `ti...', Array)
+#3 F:\xampp\htdocs\projects\movie\app\database\seeds\LanguageTableSeeder.php(31): Illuminate\Database\Query\Builder->insert(Array)
+#4 F:\xampp\htdocs\projects\movie\vendor\laravel\framework\src\Illuminate\Database\Console\SeedCommand.php(52): LanguageTableSeeder->run()
+#5 F:\xampp\htdocs\projects\movie\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\SeedCommand->fire()
+#6 F:\xampp\htdocs\projects\movie\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(241): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 F:\xampp\htdocs\projects\movie\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 F:\xampp\htdocs\projects\movie\vendor\symfony\console\Symfony\Component\Console\Application.php(891): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 F:\xampp\htdocs\projects\movie\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\SeedCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 F:\xampp\htdocs\projects\movie\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 F:\xampp\htdocs\projects\movie\artisan(59): Symfony\Component\Console\Application->run()
+#12 {main} [] []
+[2014-03-02 06:30:37] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Maximum execution time of 60 seconds exceeded' in F:\xampp\htdocs\projects\movie\vendor\laravel\framework\src\Illuminate\Database\Connection.php:337
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
